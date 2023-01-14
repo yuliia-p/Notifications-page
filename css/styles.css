@@ -2,21 +2,15 @@
 
 body {
   font-family: "Plus Jakarta Sans", serif;
-  color: hsl(219deg, 14%, 63%);
+  color: hsl(219deg, 12%, 42%);
   font-weight: 500;
 
   /* unread color */
 }
 
-.container {
-  padding: 1.2rem;
-  margin: 0;
-  width: 100%;
-}
-
 .notifications-p {
   color: hsl(224deg, 21%, 14%);
-  font-size: 1.2rem;
+  font-size: 1.75rem;
   font-weight: 800;
   margin-right: 0.5rem;
 }
@@ -36,9 +30,15 @@ body {
   margin: 0;
 }
 
+.user-name:hover {
+  color: hsl(219deg, 85%, 26%);
+}
+
 p {
+  color: hsl(219deg, 12%, 42%);
   font-size: 0.9rem;
   margin: 0.3rem 0;
+  font-weight: 500;
 }
 
 .user-content {
@@ -58,8 +58,7 @@ img {
 }
 
 .notification {
-  /* background-color: hsl(210deg, 60%, 98%); */
-  margin: 1rem 0;
+  margin: 0.7rem 0;
   padding: 1rem;
   border-radius: 7px;
 }
@@ -67,17 +66,21 @@ img {
 .private-message {
   color: hsl(219deg, 12%, 42%);
   border: solid 1px hsl(211deg, 68%, 94%);
+  border-radius: 7px;
+  cursor: pointer;
 }
 
 .message {
   padding: 1rem;
 }
 
+.private-message:hover {
+  background-color: hsl(205deg, 33%, 90%);
+}
+
 .unread {
   color: hsl(219deg, 14%, 63%);
-
-  /* background-color: hsl(211deg, 68%, 94%); */
-  background-color: hsl(211deg, 68%, 94%);
+  background-color: hsl(210deg, 60%, 98%);
 }
 
 .unread i {
@@ -96,10 +99,49 @@ img {
 }
 
 span.group-name {
-  color: hsl(219deg, 85%, 26%);
   font-weight: 800;
+  color: hsl(219deg, 85%, 26%);
 }
 
 span.post-name {
   font-weight: 500;
+}
+
+span.post-name:hover,
+span.group-name:hover,
+p.mark-read:hover {
+  cursor: pointer;
+  color: hsl(219deg, 85%, 26%);
+}
+
+span.post-name:hover {
+  font-weight: 800;
+}
+
+p.time {
+  color: hsl(219deg, 14%, 63%);
+}
+
+@media screen and (min-width: 756px) {
+  body {
+    background-color: hsl(210deg, 60%, 98%);
+  }
+
+  .container {
+    background-color: white;
+    box-shadow: 1px 1px 27px -2px rgba(147, 157, 174, 0.34);
+    border-radius: 15px;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  .private-message {
+    margin-top: 1rem;
+  }
+
+  div.user-avatar img {
+    width: 70px;
+  }
 }
