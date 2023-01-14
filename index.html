@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/layout.css">
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <title>Notifications page</title>
   <style>
@@ -15,9 +16,10 @@
 </head>
 <body>
   <div class="container">
-    <div class="header flex space-between">
-      <div class="notifications-div">
-        <p class="notifications-p">Notifications <span>3</span></p>
+    <div class="header flex space-between flex-end">
+      <div class="notifications-div flex flex-end">
+        <p class="notifications-p">Notifications</p>
+        <p class="number-notifications">3</p>
       </div>
       <p>Mark all as read</p>
     </div>
@@ -28,44 +30,52 @@
         </div>
         <div class="user-content">
           <p class="user-name">Mark Webber
-            <span class="notification-text">Mark Webber reacted to your recent post
-              <span class="post-name">My first tournament today!</span></span>
+            <span class="notification-text">reacted to your recent post
+              <span class="post-name">My first tournament today!</span>
+              <span class="circle"><i class="fa fa-solid fa-circle"></i></span>
+            </span>
           </p>
           <p class="time">1m ago</p>
         </div>
       </div>
-      <div class="notification flex">
+      <div class="notification flex unread">
         <div class="user-avatar">
           <img src="./images/avatar-angela-gray.webp" alt="avatar">
         </div>
         <div class="user-content">
           <p class="user-name">Angela Gray
             <span class="notification-text">followed you
-              <span class="post-name"></span></span>
+              <span class="post-name"></span>
+              <span class="circle"><i class="fa fa-solid fa-circle"></i></span>
+            </span>
           </p>
           <p class="time">5m ago</p>
         </div>
       </div>
-      <div class="notification flex">
+      <div class="notification flex unread">
         <div class="user-avatar">
           <img src="./images/avatar-jacob-thompson.webp" alt="avatar">
         </div>
         <div class="user-content">
           <p class="user-name">Jacob Thompson
             <span class="notification-text">has joined your group
-              <span class="post-name">Chess Club</span></span>
+              <span class="group-name">Chess Club</span>
+              <span class="circle"><i class="fa fa-solid fa-circle"></i></span>
+            </span>
           </p>
           <p class="time">1 day ago</p>
         </div>
       </div>
-      <div class="notification flex">
+      <div class="notification flex read">
         <div class="user-avatar">
           <img src="./images/avatar-rizky-hasanuddin.webp" alt="avatar">
         </div>
         <div class="user-content">
           <p class="user-name">Rizky Hasanuddin
             <span class="notification-text">sent you a private message
-              <span class="post-name"></span></span>
+              <span class="post-name"></span>
+              <span class="circle"><i class="fa fa-solid fa-circle"></i></span>
+            </span>
           </p>
           <p class="time">5 days ago</p>
           <div class="private-message">
@@ -74,38 +84,45 @@
           </div>
         </div>
       </div>
-      <div class="notification flex">
+      <div class="notification flex read">
         <div class="user-avatar">
           <img src="./images/avatar-kimberly-smith.webp" alt="avatar">
         </div>
-        <div class="user-content">
-          <p class="user-name">Kimberly Smith
+        <div class="user-content flex wrap">
+          <p class="user-name flex-basis-80">Kimberly Smith
             <span class="notification-text">commented on your picture
-              <span class="post-name"><img src="./images/image-chess.webp" alt="chess-image"></span></span>
+              <span class="post-name"></span>
+              <span class="circle"><i class="fa fa-solid fa-circle"></i></span>
+            </span>
           </p>
+          <img class="flex-basis-20" src="./images/image-chess.webp" alt="chess-image">
           <p class="time">1 week ago</p>
         </div>
       </div>
-      <div class="notification flex">
+      <div class="notification flex read">
         <div class="user-avatar">
           <img src="./images/avatar-nathan-peterson.webp" alt="avatar">
         </div>
         <div class="user-content">
           <p class="user-name">Nathan Peterson
             <span class="notification-text">reacted to your recent post
-              <span class="post-name">5 end-game strategies to increase your win rate</span></span>
+              <span class="post-name">5 end-game strategies to increase your win rate</span>
+              <span class="circle"><i class="fa fa-solid fa-circle"></i></span>
+            </span>
           </p>
           <p class="time">2 weeks ago</p>
         </div>
       </div>
-      <div class="notification flex">
+      <div class="notification flex read">
         <div class="user-avatar">
           <img src="./images/avatar-anna-kim.webp" alt="avatar">
         </div>
         <div class="user-content">
           <p class="user-name">Anna Kim
             <span class="notification-text">left the group
-              <span class="post-name">Chess Club</span></span>
+              <span class="group-name">Chess Club</span>
+              <span class="circle"><i class="fa fa-solid fa-circle"></i></span>
+            </span>
           </p>
           <p class="time">2 weeks ago</p>
         </div>
