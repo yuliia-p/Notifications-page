@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Links
 
-Live Site [URL](https://yuliia-p.github.io/News-homepage/](https://yuliia-p.github.io/Notifications-page/)
+Live Site [URL](https://yuliia-p.github.io/Notifications-page/)
 
 ## My process
 
