@@ -122,6 +122,10 @@ p.time {
   color: hsl(219deg, 14%, 63%);
 }
 
+.d-none {
+  display: none;
+}
+
 @media screen and (min-width: 756px) {
   body {
     background-color: hsl(210deg, 60%, 98%);
