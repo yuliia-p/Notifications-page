@@ -1,0 +1,105 @@
+@import "https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300&family=Josefin+Sans:wght@100;300;400;600&family=Plus+Jakarta+Sans:wght@300;500;800&family=Poppins:wght@400;700&display=swap";
+
+body {
+  font-family: "Plus Jakarta Sans", serif;
+  color: hsl(219deg, 14%, 63%);
+  font-weight: 500;
+
+  /* unread color */
+}
+
+.container {
+  padding: 1.2rem;
+  margin: 0;
+  width: 100%;
+}
+
+.notifications-p {
+  color: hsl(224deg, 21%, 14%);
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-right: 0.5rem;
+}
+
+.number-notifications {
+  font-size: 1rem;
+  color: white;
+  background-color: hsl(219deg, 85%, 26%);
+  padding: 0.2rem 0.6rem;
+  border-radius: 5px;
+}
+
+.user-name {
+  cursor: pointer;
+  font-weight: 800;
+  color: hsl(224deg, 21%, 14%);
+  margin: 0;
+}
+
+p {
+  font-size: 0.9rem;
+  margin: 0.3rem 0;
+}
+
+.user-content {
+  margin-left: 1rem;
+}
+
+span.notification-text {
+  font-weight: 300;
+}
+
+.post-name {
+  cursor: pointer;
+}
+
+img {
+  width: 40px;
+}
+
+.notification {
+  /* background-color: hsl(210deg, 60%, 98%); */
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 7px;
+}
+
+.private-message {
+  color: hsl(219deg, 12%, 42%);
+  border: solid 1px hsl(211deg, 68%, 94%);
+}
+
+.message {
+  padding: 1rem;
+}
+
+.unread {
+  color: hsl(219deg, 14%, 63%);
+
+  /* background-color: hsl(211deg, 68%, 94%); */
+  background-color: hsl(211deg, 68%, 94%);
+}
+
+.unread i {
+  display: inline;
+  font-size: 0.6rem;
+  margin-left: 0.3rem;
+  color: hsl(1deg, 90%, 64%);
+}
+
+.read i {
+  display: none;
+}
+
+.read {
+  background-color: transparent;
+}
+
+span.group-name {
+  color: hsl(219deg, 85%, 26%);
+  font-weight: 800;
+}
+
+span.post-name {
+  font-weight: 500;
+}
